@@ -8,7 +8,7 @@ cc_library(
     name = "my_lib",  
     srcs = ["my_lib/my_lib.cc"],  
     hdrs = ["my_lib/my_lib.h"],
-    visibility = ["//visibility:public"], 
+    visibility = ["//visibility:public"],
 )
 
 cc_binary(  
@@ -17,5 +17,5 @@ cc_binary(
     deps = [
         ":my_lib",
          "@jsoncpp//:jsoncpp",  
-    ],  
+    ], 
 )  

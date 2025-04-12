@@ -1,0 +1,4 @@
+# Default options for all builds  
+build --cxxopt=-std=c++17   
+build --cxxopt=-Wall 
+build --cxxopt=-Wextra 
