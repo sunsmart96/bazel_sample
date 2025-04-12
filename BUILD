@@ -9,5 +9,13 @@ cc_library(
 cc_binary(  
     name = "hello_world",  
     srcs = ["src/main.cc"],  
-    deps = [":my_lib"],   
+    deps = [
+        ":my_lib",
+         "@jsoncpp//:jsoncpp",  
+    ],
+    copts = [  
+        "-I/usr/include",
+        "-Wno-unknown-warning-option", 
+        "-include-what-you-use", 
+    ],     
 )  

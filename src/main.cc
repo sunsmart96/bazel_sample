@@ -1,7 +1,14 @@
 // main.cpp  
-#include "my_lib.h"  // 引用头文件  
+#include "my_lib.h"  
+#include <json/json.h>
+#include <iostream>
 
 int main() {  
-    hello();  // 调用内部库函数  
+    hello();
+
+    Json::Value root;  
+    root["example"] = "Hello, jsoncpp!";  
+    
+    std::cout << root << std::endl;    
     return 0;  
 }  
