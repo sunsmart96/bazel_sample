@@ -1,3 +1,9 @@
+sh_binary(  
+    name = "check_format",  
+    srcs = ["check_format.sh"],  
+    deps = [],  
+)  
+
 cc_library(  
     name = "my_lib",  
     srcs = ["my_lib/my_lib.cc"],  
@@ -12,10 +18,5 @@ cc_binary(
     deps = [
         ":my_lib",
          "@jsoncpp//:jsoncpp",  
-    ],
-    copts = [  
-        "-I/usr/include",
-        "-Wno-unknown-warning-option", 
-        "-include-what-you-use", 
-    ],     
+    ],  
 )  

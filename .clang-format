@@ -1,0 +1,12 @@
+BasedOnStyle: Google  
+IndentWidth: 2  
+ColumnLimit: 80  
+UseTab: Never  
+AllowShortBlocksOnASingleLine: true  
+AllowShortCaseLabelsOnASingleLine: true  
+AllowShortFunctionsOnASingleLine: Inline  
+BreakBeforeBraces: Attach  
+SpaceBeforeParens: ControlStatements  
+SpaceAfterCStyleCast: true  
+AlwaysBreakAfterDefinitionReturnType: None  
+AlwaysBreakAfterReturnType: None  

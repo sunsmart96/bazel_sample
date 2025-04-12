@@ -1,14 +1,15 @@
-// main.cpp  
-#include "my_lib.h"  
+// main.cpp
 #include <json/json.h>
+
 #include <iostream>
 
-int main() {  
-    hello();
+#include "my_lib.h"
 
-    Json::Value root;  
-    root["example"] = "Hello, jsoncpp!";  
-    
-    std::cout << root << std::endl;    
-    return 0;  
-}  
+int main() {
+  hello();
+  Json::Value root;
+
+  root["example"] = "Hello, jsoncpp!";
+  std::cout << root << std::endl;
+  return 0;
+}

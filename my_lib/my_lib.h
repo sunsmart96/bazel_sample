@@ -1,7 +1,7 @@
-// hello.h  
-#ifndef MY_LIB_H  
-#define MY_LIB_H  
+// hello.h
+#ifndef MY_LIB_H
+#define MY_LIB_H
 
-void hello();  
+void hello();
 
-#endif // MY_LIB_H  
+#endif  // MY_LIB_H
