@@ -4,10 +4,11 @@
 // This code is licensed under the MIT License. See LICENSE file for details.
 //
 
-#include "my_lib.h"
+#ifndef TESTLIB_TESTLIB_H_
+#define TESTLIB_TESTLIB_H_
 
-#include <iostream>
+namespace test {
+void hello();
+}  // namespace test
 
-void hello() {
-  std::cout << "Hello, World from Internal Library!" << std::endl;
-}
+#endif  // TESTLIB_TESTLIB_H_

@@ -8,7 +8,8 @@
 
 #include <iostream>
 
-#include "my_lib/my_lib.h"
+#include "custom/custom.h"
+#include "testlib/testlib.h"
 
 int main() {
   hello();
@@ -18,5 +19,7 @@ int main() {
   std::cout << root << std::endl;
 
   std::cout << "main-1" << std::endl;
+
+  test::hello();
   return 0;
 }

@@ -5,17 +5,28 @@ sh_binary(
 )  
 
 cc_library(  
-    name = "my_lib",  
-    srcs = ["my_lib/my_lib.cc"],  
-    hdrs = ["my_lib/my_lib.h"],
+    name = "custom",  
+    srcs = ["custom/custom.cc"],  
+    hdrs = ["custom/custom.h"],
     visibility = ["//visibility:public"],
+    linkstatic = False,
+)
+
+cc_library(  
+    name = "testlib",  
+    srcs = ["testlib/testlib.cc"],  
+    hdrs = ["testlib/testlib.h"],
+    visibility = ["//visibility:public"],
+    linkstatic = False,
 )
 
 cc_binary(  
     name = "hello_world",  
     srcs = ["src/main.cc"],  
     deps = [
-        ":my_lib",
+        ":custom",
+        ":testlib",
          "@jsoncpp//:jsoncpp",  
     ], 
+    linkstatic = False,
 )  

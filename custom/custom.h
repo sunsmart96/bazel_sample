@@ -4,9 +4,9 @@
 // This code is licensed under the MIT License. See LICENSE file for details.
 //
 
-#ifndef MY_LIB_MY_LIB_H_
-#define MY_LIB_MY_LIB_H_
+#ifndef CUSTOM_CUSTOM_H_
+#define CUSTOM_CUSTOM_H_
 
 void hello();
 
-#endif  // MY_LIB_MY_LIB_H_
+#endif  // CUSTOM_CUSTOM_H_
