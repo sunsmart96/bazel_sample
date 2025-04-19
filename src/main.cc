@@ -8,7 +8,7 @@
 
 #include <iostream>
 
-#include "custom/custom.h"
+#include "3rd/custom.h"
 #include "testlib/testlib.h"
 
 int main() {
