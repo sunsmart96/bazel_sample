@@ -9,7 +9,6 @@ cc_library(
     srcs = ["custom/custom.cc"],  
     hdrs = ["custom/custom.h"],
     visibility = ["//visibility:public"],
-    linkstatic = False,
 )
 
 cc_library(  
@@ -17,7 +16,6 @@ cc_library(
     srcs = ["testlib/testlib.cc"],  
     hdrs = ["testlib/testlib.h"],
     visibility = ["//visibility:public"],
-    linkstatic = False,
 )
 
 cc_binary(  
@@ -28,5 +26,4 @@ cc_binary(
         ":testlib",
          "@jsoncpp//:jsoncpp",  
     ], 
-    linkstatic = False,
 )  
